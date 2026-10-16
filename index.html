@@ -1,36 +1,252 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jop — Cybersecurity Portfolio</title>
-<style>
-:root{color-scheme:dark;--bg:#070a0d;--panel:#0c1116;--panel2:#10171e;--text:#e8f0f2;--muted:#8b9aa3;--line:#1d2a31;--accent:#61e6a8;--accent2:#7dd3fc;--danger:#ff6b7a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}#app{min-height:100vh;background:var(--bg)}a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:5;background:rgba(7,10,13,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.navin{max-width:1100px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;letter-spacing:-.04em}.brand span{color:var(--accent)}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}.wrap{max-width:1100px;margin:auto;padding:0 24px}.hero{min-height:78vh;display:grid;align-items:center;grid-template-columns:1.25fr .75fr;gap:60px}.eyebrow{font:13px ui-monospace,SFMono-Regular,monospace;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-.065em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--muted)}.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:650px}.cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--panel);padding:12px 18px;border-radius:9px;font-weight:700;font-size:14px}.btn.primary{background:var(--accent);color:#06100b;border-color:var(--accent)}.terminal{background:#050708;border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 70px #0008;overflow:hidden}.termbar{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;gap:7px}.dot{width:9px;height:9px;border-radius:50%;background:#334}.terminal pre{margin:0;padding:24px;color:#b9c7cc;font:13px/1.8 ui-monospace,SFMono-Regular,monospace}.green{color:var(--accent)}.blue{color:var(--accent2)}section{padding:90px 0;border-top:1px solid var(--line)}.sectionhead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:32px}.sectionhead h2{font-size:34px;letter-spacing:-.04em;margin:0}.sectionhead p{color:var(--muted);margin:0;max-width:480px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#315044}.tag{display:inline-block;border:1px solid #294039;color:var(--accent);border-radius:999px;padding:5px 9px;font:11px ui-monospace,monospace;margin-bottom:18px}.card h3{margin:0 0 10px;font-size:21px}.card p{color:var(--muted);line-height:1.65;margin:0 0 18px}.meta{font:12px ui-monospace,monospace;color:#64747c}.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 13px;border:1px solid var(--line);background:var(--panel);border-radius:8px;color:#cbd6da;font:13px ui-monospace,monospace}.about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about p{color:var(--muted);line-height:1.8}.timeline{border-left:1px solid var(--line);padding-left:24px}.item{position:relative;margin-bottom:30px}.item:before{content:'';position:absolute;width:7px;height:7px;background:var(--accent);border-radius:50%;left:-28px;top:7px;box-shadow:0 0 14px var(--accent)}.item b{font-size:14px}.item small{display:block;color:var(--muted);margin:5px 0 8px}.contact{display:flex;justify-content:space-between;align-items:center;gap:30px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:30px}.contact h2{margin:0 0 8px}.contact p{margin:0;color:var(--muted)}footer{padding:30px 0;color:#65747b;font:12px ui-monospace,monospace;display:flex;justify-content:space-between}@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;padding:70px 0}.terminal{display:none}.grid,.about{grid-template-columns:1fr}.contact{display:block}.contact .btn{display:inline-block;margin-top:20px}.sectionhead{display:block}.sectionhead p{margin-top:12px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovin Valianta - Undergraduate Cyber Security Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #e2e8f0; }
+        .print-container { max-width: 1100px; margin: 0 auto; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
 </head>
-<body><div id="app">
-<nav class="nav"><div class="navin"><div class="brand">jop<span>.sec</span></div><div class="links"><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
-<main class="wrap">
-<section class="hero" style="border:0">
-<div><div class="eyebrow">Cybersecurity Student · Internship 2026</div><h1>Learning how systems break.<br><em>Building how they’re secured.</em></h1><p>I’m a cybersecurity student at BINUS University exploring web security, secure programming, and offensive security. Currently looking for an internship where I can turn hands-on labs and academic projects into real-world security experience.</p><div class="cta"><a class="btn primary" href="#work">View my work ↓</a><a class="btn" href="#contact">Get in touch</a></div></div>
-<div class="terminal"><div class="termbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><pre><span class="green">$ whoami</span>
-jop@binus:~$ cybersecurity_student
+<body class="py-10 px-4 sm:px-6">
 
-<span class="blue">focus</span>    web security
-<span class="blue">learning</span> offensive security
-<span class="blue">stack</span>    Linux · Burp Suite · C · Python
-<span class="blue">status</span>   open to internship
+    <div class="print-container bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row">
+        
+        <!-- Left Sidebar (Color Accent & Profile) -->
+        <aside class="w-full md:w-1/3 bg-slate-900 text-slate-300 p-8 sm:p-10 flex flex-col">
+            
+            <!-- Profile Image -->
+            <div class="flex justify-center mb-8">
+                <!-- Ganti src dengan path/URL foto profesional Anda, mis. "foto-profil.jpg" -->
+                <div class="relative w-40 h-40 rounded-full border-4 border-green-600 overflow-hidden shadow-lg shadow-green-600/20 bg-slate-800">
+                    <img src="foto-profil.jpg" alt="Foto Profil Jovin Valianta" class="w-full h-full object-cover">
+                </div>
+            </div>
 
-<span class="green">$ cat mindset.txt</span>
-learn → test → document → improve</pre></div>
-</section>
-<section id="work"><div class="sectionhead"><h2>Selected work</h2><p>Projects and labs that show how I approach security: understand the system, reproduce the issue, then think about the fix.</p></div><div class="grid">
-<article class="card"><span class="tag">WEB SECURITY</span><h3>OWASP Juice Shop Labs</h3><p>Hands-on practice with common web vulnerabilities using Burp Suite and the OWASP Web Security Testing Guide. Focused on understanding attack flow rather than just completing challenges.</p><div class="meta">Burp Suite · OWASP WSTG · HTTP · Web Security</div></article>
-<article class="card"><span class="tag">SECURITY TOOL</span><h3>Password Manager & Generator</h3><p>A browser-extension project exploring password generation, credential storage, and security-conscious UX decisions.</p><div class="meta">JavaScript · Browser Extension · Security Design</div></article>
-<article class="card"><span class="tag">LEARNING PLATFORM</span><h3>SQLio</h3><p>An interactive SQL learning platform concept built to make SQL practice more accessible, with an in-browser editor and hands-on exercises.</p><div class="meta">React · JavaScript · sql.js · CodeMirror</div></article>
-<article class="card"><span class="tag">CYBERSECURITY</span><h3>Home Lab & CTF Practice</h3><p>Building practical experience through Hack The Box, Kali Linux, virtual machines, enumeration, and network troubleshooting.</p><div class="meta">Kali Linux · Nmap · HTB · VMware</div></article>
-</div></section>
-<section id="skills"><div class="sectionhead"><h2>Security toolkit</h2><p>Tools and technologies I’m actively learning and using through coursework, labs, and projects.</p></div><div class="skills"><span class="skill">Linux</span><span class="skill">Kali Linux</span><span class="skill">Burp Suite</span><span class="skill">OWASP WSTG</span><span class="skill">Nmap</span><span class="skill">HTTP</span><span class="skill">Web Security</span><span class="skill">C</span><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">PHP</span><span class="skill">SQL</span><span class="skill">Git</span><span class="skill">VMware</span><span class="skill">Docker</span></div></section>
-<section id="about"><div class="about"><div><div class="eyebrow">A little about me</div><h2 style="font-size:38px;letter-spacing:-.04em">Student first.<br>Security mindset always.</h2><p>I’m currently in my second year of Cyber Security at BINUS University. Most of my learning happens by building things, breaking things in controlled labs, and trying to understand why a vulnerability exists in the first place.</p><p>I’m especially interested in application security, offensive security, and secure development. I’m still early in the journey—which is exactly why I’m looking for an internship where I can learn from engineers and contribute wherever I can.</p></div><div class="timeline"><div class="item"><b>BINUS University</b><small>Cyber Security · 2025 — Present</small><span class="meta">Coursework, labs, security community</span></div><div class="item"><b>Cyber Security Community</b><small>Campus organization</small><span class="meta">Security learning · Events · Projects</span></div><div class="item"><b>Currently looking for</b><small>Cybersecurity Internship</small><span class="meta">AppSec · SOC · Pentest · GRC</span></div></div></div></section>
-<section id="contact"><div class="contact"><div><h2>Let’s talk security.</h2><p>Open to internship opportunities, security projects, and conversations with people in the field.</p></div><a class="btn primary" href="mailto:your.email@example.com">Email me →</a></div></section>
-</main><footer class="wrap"><span>© 2026 Jop</span><span>built with curiosity & caffeine</span></footer>
-</div></body></html>
+            <!-- Name & Title -->
+            <div class="text-center mb-10 border-b border-slate-700 pb-8">
+                <h1 class="text-3xl font-bold text-white tracking-tight mb-1">Jovin Valianta</h1>
+                <p class="text-xs text-slate-400 mb-3">He/Him</p>
+                <h2 class="text-blue-400 font-medium">Undergraduate Cyber Security Student</h2>
+                <p class="text-sm text-slate-400 mt-1">Cyber Security Community &middot; BINUS University</p>
+
+                <!-- Location -->
+                <p class="flex items-center justify-center gap-1.5 text-xs text-slate-400 mt-3">
+                    <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    Cengkareng, Jakarta, Indonesia
+                </p>
+            </div>
+
+            <!-- Contact Elements -->
+            <div class="mb-10">
+                <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Kontak</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-3">
+                        <span class="bg-slate-800 p-2 rounded text-blue-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </span>
+                        <a href="mailto:archydons@gmail.com" class="hover:text-white transition">archydons@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-slate-800 p-2 rounded text-blue-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                        </span>
+                        <a href="https://www.linkedin.com/in/jovin-valianta" target="_blank" rel="noopener" class="hover:text-white transition">linkedin.com/in/jovin-valianta</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-slate-800 p-2 rounded text-blue-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </span>
+                        <a href="https://github.com/Jval2244" target="_blank" rel="noopener" class="hover:text-white transition">github.com/Jval2244</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skills/Badges -->
+            <div class="mb-10">
+                <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Kompetensi Inti</h3>
+
+                <p class="text-xs text-slate-400 mb-2">Technical</p>
+                <div class="flex flex-wrap gap-2 mb-5">
+                    <span class="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-3 py-1.5 rounded text-xs font-semibold">Penetration Testing</span>
+                    <span class="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-3 py-1.5 rounded text-xs font-semibold">Threat Modeling</span>
+                    <span class="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-3 py-1.5 rounded text-xs font-semibold">Static Analysis (SAST)</span>
+                    <span class="bg-blue-600/20 text-blue-300 border border-blue-500/30 px-3 py-1.5 rounded text-xs font-semibold">C Programming (basic)</span>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Pendidikan</h3>
+                <div class="relative pl-4 border-l border-slate-700 space-y-6">
+                    <div class="relative">
+                        <div class="absolute w-2 h-2 bg-blue-500 rounded-full -left-[20.5px] top-1.5"></div>
+                        <h4 class="text-white font-medium text-sm">BINUS University</h4>
+                        <p class="text-xs text-blue-400 mb-1">Sep 2024 - Sep 2028</p>
+                        <p class="text-xs text-slate-400">Bachelor's Degree, Cyber Security</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute w-2 h-2 bg-slate-600 rounded-full -left-[20.5px] top-1.5"></div>
+                        <h4 class="text-white font-medium text-sm">Sekolah Kristen Kalam Kudus Indonesia</h4>
+                        <p class="text-xs text-blue-400 mb-1">2021 - 2024</p>
+                        <p class="text-xs text-slate-400">High School Diploma</p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Right Main Content -->
+        <main class="w-full md:w-2/3 bg-white p-8 sm:p-12 text-slate-800">
+            
+            <!-- Summary -->
+            <section class="mb-12">
+                <h3 class="text-xl font-bold text-slate-900 border-b-2 border-slate-100 pb-3 mb-4 flex items-center gap-2">
+                    <span class="w-6 h-1 bg-blue-600 rounded"></span> Ringkasan Profil
+                </h3>
+                <p class="text-slate-600 leading-relaxed text-justify text-sm">
+                    Mahasiswa S1 Cyber Security di BINUS University yang berdomisili di Jakarta, dengan fokus penguasaan pada <i>penetration testing</i>, <i>threat modeling</i>, dan analisis keamanan aplikasi. Memiliki pengalaman praktis dalam audit keamanan sistem berbasis web dan <i>mobile</i>, serta merancang arsitektur perangkat lunak yang aman sejak fase perancangan. Didukung pengalaman organisasi, <i>public speaking</i>, dan kegiatan kerelawanan di bidang pendidikan.
+                </p>
+            </section>
+
+ 
+            <!-- Projects (Card Elements) -->
+            <section class="mb-12">
+                <h3 class="text-xl font-bold text-slate-900 border-b-2 border-slate-100 pb-3 mb-6 flex items-center gap-2">
+                    <span class="w-6 h-1 bg-blue-600 rounded"></span> Proyek & Analisis Teknis
+                </h3>
+
+                <div class="space-y-6">
+
+                    <!-- Project 1: Binusmaya -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 border-l-4 border-l-blue-600 shadow-sm hover:shadow-md transition">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                            <h4 class="font-bold text-slate-900">Binusmaya Web Infrastructure Threat Modeling</h4>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 mb-2">Kategori: Threat Analysis, Web Security</p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>Membangun Data Flow Diagram (DFD) untuk memetakan arsitektur dan titik interaksi sistem portal akademik Binusmaya.</li>
+                            <li>Mengeksekusi analisis ancaman komprehensif menggunakan metodologi STRIDE via Microsoft SDL Threat Modeling Tool untuk mengidentifikasi potensi eksploitasi pada alur data.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2: Android Static Vulnerability Assessment -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 border-l-4 border-l-blue-600 shadow-sm hover:shadow-md transition">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                            <h4 class="font-bold text-slate-900">Android App Static Vulnerability Assessment</h4>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 mb-2">Kategori: Mobile Security, Static Analysis</p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>Melakukan static analysis pada aplikasi Android untuk mengidentifikasi potensi kelemahan keamanan melalui pemeriksaan artefak aplikasi.</li>
+                            <li>Mengevaluasi temuan keamanan seperti hardcoded secrets, konfigurasi deep link, dan pengaturan backup yang berpotensi meningkatkan risiko keamanan.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 3: SQLio -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 border-l-4 border-l-blue-600 shadow-sm hover:shadow-md transition">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                            <h4 class="font-bold text-slate-900">SQLio — Interactive SQL Playground</h4>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 mb-2">Kategori: Web Development, Database, Interactive Learning</p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>Merancang platform pembelajaran SQL interaktif yang memungkinkan pengguna menulis dan mencoba query SQL melalui antarmuka berbasis web.</li>
+                            <li>Mengeksplorasi penggunaan React, JavaScript, dan sql.js untuk mendukung pemrosesan query SQL di browser.</li>
+                            <li>Merencanakan integrasi editor kode seperti CodeMirror atau Monaco Editor untuk meningkatkan pengalaman menulis dan menguji query.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 4: AI Food Waste Tracker -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 border-l-4 border-l-blue-600 shadow-sm hover:shadow-md transition">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                            <h4 class="font-bold text-slate-900">AI Food Waste Tracker</h4>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-500 mb-2">Kategori: AI Application, Python, Sustainability</p>
+                        <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>Merancang MVP aplikasi berbasis Python dan Streamlit untuk membantu pengguna memantau persediaan makanan serta mengurangi potensi food waste.</li>
+                            <li>Mengembangkan konsep pemantauan data makanan sebagai dasar untuk membantu pengguna mengelola persediaan secara lebih terstruktur.</li>
+                            <li>Mengeksplorasi pemanfaatan AI untuk mendukung pengelolaan makanan secara lebih efisien dan berkelanjutan.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Experience -->
+            <section class="mb-12">
+                <h3 class="text-xl font-bold text-slate-900 border-b-2 border-slate-100 pb-3 mb-6 flex items-center gap-2">
+                    <span class="w-6 h-1 bg-blue-600 rounded"></span> Pengalaman & Organisasi
+                </h3>
+                
+                <div class="relative pl-6 border-l-2 border-slate-200 space-y-8 mt-4">
+                    <!-- Exp 1 -->
+                    <div class="relative">
+                        <div class="absolute w-4 h-4 bg-white border-4 border-blue-600 rounded-full -left-[33px] top-0.5"></div>
+                        <h4 class="font-bold text-slate-900">Education Division Member</h4>
+                        <p class="text-sm font-medium text-blue-600 mb-1">Cyber Security Community &middot; Seasonal</p>
+                        <p class="text-xs text-slate-500 font-medium">Feb 2026 - Sekarang</p>
+                    </div>
+                    
+                    <!-- Exp 2 -->
+                    <div class="relative">
+                        <div class="absolute w-4 h-4 bg-white border-4 border-slate-400 rounded-full -left-[33px] top-0.5"></div>
+                        <h4 class="font-bold text-slate-900">Activist of HIMTI Care 2024/2025</h4>
+                        <p class="text-sm font-medium text-slate-600 mb-1">HIMTI BINUS University &middot; Seasonal</p>
+                        <p class="text-xs text-slate-500 font-medium">Des 2024 - Agu 2025 &middot; Hybrid</p>
+                        <p class="text-xs text-slate-500 mt-1.5">Penghargaan: Certificate of Appreciation</p>
+                    </div>
+
+                    <!-- Exp 3 -->
+                    <div class="relative">
+                        <div class="absolute w-4 h-4 bg-white border-4 border-slate-400 rounded-full -left-[33px] top-0.5"></div>
+                        <h4 class="font-bold text-slate-900">Education Counselor</h4>
+                        <p class="text-sm font-medium text-slate-600 mb-1">BINUS University &middot; Part-time</p>
+                        <p class="text-xs text-slate-500 font-medium">Mei 2024 - Agu 2025 &middot; 1 thn 4 bln</p>
+                        <p class="text-xs text-slate-500 font-medium">Jakarta, Indonesia &middot; On-site</p>
+                        <p class="text-xs text-slate-500 mt-1.5">Penghargaan: Token of Appreciation</p>
+                        <div class="flex flex-wrap gap-1.5 mt-2">
+                            <span class="bg-slate-100 text-slate-600 border border-slate-200 px-2 py-0.5 rounded text-xs">Marketing</span>
+                            <span class="bg-slate-100 text-slate-600 border border-slate-200 px-2 py-0.5 rounded text-xs">Public Speaking</span>
+                            <span class="bg-slate-100 text-slate-600 border border-slate-200 px-2 py-0.5 rounded text-xs">Negotiation</span>
+                            <span class="bg-slate-100 text-slate-600 border border-slate-200 px-2 py-0.5 rounded text-xs">Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Volunteering -->
+            <section>
+                <h3 class="text-xl font-bold text-slate-900 border-b-2 border-slate-100 pb-3 mb-6 flex items-center gap-2">
+                    <span class="w-6 h-1 bg-blue-600 rounded"></span> Volunteering
+                </h3>
+
+                <div class="relative pl-6 border-l-2 border-slate-200 space-y-8 mt-4">
+                    <!-- Vol 1 -->
+                    <div class="relative">
+                        <div class="absolute w-4 h-4 bg-white border-4 border-blue-600 rounded-full -left-[33px] top-0.5"></div>
+                        <h4 class="font-bold text-slate-900">Event Organizer Volunteer</h4>
+                        <p class="text-sm font-medium text-blue-600 mb-1">BINUS University</p>
+                        <p class="text-xs text-slate-500 font-medium">Des 2025 &middot; 1 bln &middot; Social Services</p>
+                        <p class="text-xs text-slate-500 mt-1.5">Penghargaan: Certificate of Participation</p>
+                    </div>
+
+                    <!-- Vol 2 -->
+                    <div class="relative">
+                        <div class="absolute w-4 h-4 bg-white border-4 border-slate-400 rounded-full -left-[33px] top-0.5"></div>
+                        <h4 class="font-bold text-slate-900">Mathematics Tutor Volunteer</h4>
+                        <p class="text-sm font-medium text-slate-600 mb-1">Teach For Indonesia</p>
+                        <p class="text-xs text-slate-500 font-medium">Sep 2025 &middot; 1 bln &middot; Education</p>
+                        <p class="text-sm text-slate-600 mt-2">Mengajar siswa SMP pada mata pelajaran matematika, mulai dari penjelasan konsep hingga latihan soal dan pemahaman.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
